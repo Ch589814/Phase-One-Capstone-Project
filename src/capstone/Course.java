@@ -1,4 +1,4 @@
-package LabOne;
+package capstone;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,4 +67,7 @@ public class Course {
     }
 
 
+    public int getCredits() {
+        return credit;
+    }
 }
