@@ -7,13 +7,14 @@ public  abstract class Person {
     public Person(String name, String email) {
         this.name = name;
         this.email =email;
+        setName(name);
+        setEmail(email);
 
     }
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("Name cannot be empty");
@@ -25,14 +26,11 @@ public  abstract class Person {
         return email;
     }
     public void setEmail(String email) {
-        if (email != null && !email.trim().isEmpty()) {
-            if (!email.contains("@")) {
-                throw new IllegalArgumentException("Invalid email");
-            }
-            this.email = email.trim();
-        } else {
-            this.email = null;
+
+        if (email == null || email.trim().isEmpty() || !email.contains("@")) {
+            throw new IllegalArgumentException("Invalid email");
         }
+        this.email = email.trim();
     }
-    public abstract double calculateTuition();
+
 }
