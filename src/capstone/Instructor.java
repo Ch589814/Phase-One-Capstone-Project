@@ -1,4 +1,4 @@
-package LabOne;
+package capstone;
 public class Instructor extends  Person{
     private String department;
     public Instructor(String name, String email,String department) {

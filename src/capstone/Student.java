@@ -1,4 +1,4 @@
-package LabOne;
+package capstone;
 import java.util.HashMap;
 import java.util.Map;
 

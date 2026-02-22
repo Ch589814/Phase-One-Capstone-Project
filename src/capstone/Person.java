@@ -1,4 +1,4 @@
-package LabOne;
+package capstone;
 
 public  abstract class Person {
     private String name;
