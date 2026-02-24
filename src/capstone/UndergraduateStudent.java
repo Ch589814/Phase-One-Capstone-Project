@@ -2,8 +2,8 @@ package capstone;
 public class UndergraduateStudent extends Student {
     private static final double FLAT_RATE = 500000.0;
 
-    public UndergraduateStudent(String name, String email, String studentID, String department) {
-        super(name, email, studentID, department);
+    public UndergraduateStudent(String name, String email, String id, String dept) {
+        super(name, email, id, dept);
     }
 
     @Override
