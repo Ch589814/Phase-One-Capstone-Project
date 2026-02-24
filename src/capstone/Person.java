@@ -7,8 +7,6 @@ public  abstract class Person {
     public Person(String name, String email) {
         this.name = name;
         this.email =email;
-        setName(name);
-        setEmail(email);
 
     }
 
@@ -32,5 +30,6 @@ public  abstract class Person {
         }
         this.email = email.trim();
     }
+    public abstract void displayInfo();
 
 }
